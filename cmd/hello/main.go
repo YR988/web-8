@@ -13,7 +13,7 @@ import (
 
 const (
 	host     = "localhost"
-	port     = 5432
+	port     = 9876
 	user     = "postgres"
 	password = "postgres"
 	dbname   = "sandbox"
@@ -85,7 +85,7 @@ func (dp *DatabaseProvider) InsertHello(msg string) error {
 
 func main() {
 	// Считываем аргументы командной строки
-	address := flag.String("address", "127.0.0.1:8081", "адрес для запуска сервера")
+	address := flag.String("address", "127.0.0.1:8083", "адрес для запуска сервера")
 	flag.Parse()
 
 	// Формирование строки подключения для postgres
